@@ -1,0 +1,55 @@
+*{
+    font-weight: bold;
+}
+
+body{
+    background: blueviolet;
+}
+
+h1{
+    background-color: violet;
+    color: black;
+    font-size: 50px;
+    text-decoration: wavy;
+    padding: 15px;
+}
+
+a{
+    padding: 0px;
+    text-decoration: solid;
+    font-size: 20px;
+    color: violet;
+}
+
+footer a{
+    color: blue; 
+}
+
+#descripcion, #formulario form{
+    margin-top: 10px;
+    border: 5px solid paleturquoise;
+    border-radius: 1px;
+    padding: 10px;
+}
+
+#formulario form *{
+    display: block;
+}
+
+input[type="text"]{
+    padding: 3px;
+    margin: 10px;
+}
+
+input[type="submit"]{
+    background-color: paleturquoise;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px black dashed;
+    cursor: context-menu;
+}
+
+li > ul > li > a{
+    color: black;
+}
