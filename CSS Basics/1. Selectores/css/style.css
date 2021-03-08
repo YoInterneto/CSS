@@ -1,7 +1,9 @@
+/* Selector universal */
 *{
     font-weight: bold;
 }
 
+/* Selectores de etiqueta */
 body{
     background: blueviolet;
 }
@@ -21,10 +23,12 @@ a{
     color: violet;
 }
 
+/* Selector de etiqueta dentro de una etiqeuta */
 footer a{
     color: blue; 
 }
 
+/* Selector de ID */
 #descripcion, #formulario form{
     margin-top: 10px;
     border: 5px solid paleturquoise;
@@ -36,6 +40,7 @@ footer a{
     display: block;
 }
 
+/* Selector de atributo */
 input[type="text"]{
     padding: 3px;
     margin: 10px;
@@ -50,6 +55,9 @@ input[type="submit"]{
     cursor: context-menu;
 }
 
+/* Selector de herencia
+    dentro de li cogemos el ul, luego el li y su a
+*/
 li > ul > li > a{
     color: black;
 }
