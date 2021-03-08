@@ -1,0 +1,87 @@
+body{
+    background-image: url("../images/fondo.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+
+    color: greenyellow;
+
+    margin: 0px;
+    padding: 30px;
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0.603);
+
+    padding: 20px;
+    
+    border: 5px greenyellow solid;
+
+    text-align: center;
+}
+
+#productos{
+    max-width: 1050px;
+
+    background-color: rgba(56, 119, 64, 0.603);
+
+    border: 1px greenyellow solid;
+
+    margin-bottom: 50px;
+
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.contenido p{
+    background-color: black;
+    padding: 20px;
+}
+
+.topic{
+    display: block;
+    float: left;
+
+    background-color: black;
+
+    width: 250px;
+    height: 600px;
+
+    border: 5px greenyellow solid;
+
+    padding: 30px;
+    padding-top: 7px;
+
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.topic h3, .contenido h3{
+    background-image: url("../images/fondo1.gif");
+    background-size: 100%;
+
+    color: white;
+
+    border: 1px solid rgba(88, 231, 75, 0.514);
+
+    font-weight: bold;
+
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    padding: 4px;
+
+    text-align: center;
+}
+
+.topic p{
+    text-align: justify;
+}
+
+.topic img{
+    position: absolute; 
+    width: 250px;
+    margin: 0 auto; 
+}
