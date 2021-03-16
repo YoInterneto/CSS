@@ -6,6 +6,11 @@
     color: greenyellow;
 }
 
+.clearfix{
+    float: none;
+    clear: both;
+}
+
 ul li:first-child:active{
     color: blueviolet;
     
@@ -37,7 +42,7 @@ ul li:nth-child(1){
     text-decoration: none;
     background-color: gray;
 
-    transition: padding 5s, border-radius 1s,font-size 4s;
+    transition: padding 5s, border-radius 1s, font-size 4s;
 }
 
 #button a, #button1 a{
@@ -49,4 +54,98 @@ ul li:nth-child(1){
     box-shadow: inset 1px 1px 4px black;
     padding: 100px;
     font-size: 20px;
+}
+
+#animation{
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    border: 3px solid greenyellow;
+    background-color: gray;
+    color: blueviolet;
+}
+
+#animation:hover{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes bigger{
+    from{
+        width: 300px;
+    }
+    to{
+        width: 600px;
+    }
+}
+
+@keyframes bigger-shorter{
+    0%{
+        margin-left: 20px;
+        font-size: 20px;
+        border-radius: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 200px;
+        font-size: 60px;
+        border-radius: 300px;
+        transform: rotate(360deg);
+    }
+    100%{
+        margin-left: 20px;
+        font-size: 20px;
+        border-radius: 0px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bounce{
+    0%{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    10%{
+        margin-top: 10px;
+    }
+    20%{
+        margin-top: 30px;
+    }
+    30%{
+        margin-top: 10px;
+    }
+    40%{
+        margin-top: 30px;
+    }
+    50%{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    60%{
+        margin-top: 30px;
+    }
+    70%{
+        margin-top: 10px;
+    }
+    80%{
+        margin-top: 30px;
+    }
+    90%{
+        margin-top: 10px;
+    }
+    100%{
+        margin-top: 30px;
+    }
 }
