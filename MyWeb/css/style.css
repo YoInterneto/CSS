@@ -1,0 +1,16 @@
+
+#form1, #form2, #form3{
+    display: block;
+    float: left;
+
+    background-color: aqua;
+    border: 1px solid black;
+
+    margin: 100px;
+    padding: 10px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
