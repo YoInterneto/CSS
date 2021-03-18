@@ -1,0 +1,170 @@
+
+@font-face{
+    font-family: "Nevis";
+    src: url("./fonts/nevis.eot");
+    src: url("./fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/nevis.woff") format("woff"),
+        url("./fonts/nevis.ttf") format("truetype"),
+        url("./fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url("../image/paven.png");
+    background-repeat: repeat;
+}
+
+/* PAGE HEADER */
+#header{
+    min-width: 1024;
+    width: 100%;
+    height: 250px;
+
+    margin: 0px auto;
+}
+
+#header #logo{
+    width: 770px;
+
+    padding-top: 20px;
+    margin: 0px auto;
+}
+
+#header #logo img{
+    display: block;
+    text-align: center;
+
+    margin: 0px auto;
+    width: 150px;
+}
+
+#title{
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 10px;
+
+    font-size: 40px;
+    font-family: Nevis;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+
+    text-shadow: 0px 2px 1px rgb(58, 58, 58);
+
+    transition: all 300ms;
+}
+
+#title:hover{
+    text-shadow: 0px 2px 1px rgb(58, 58, 58), 0px 0px 5px #70b231;
+}
+
+#title a{
+    text-decoration: none;
+
+    color:#70b231;
+}
+
+/* NAVIGATION BAR */
+#menu{
+    width: 100%;
+    height: 40px;
+
+    background-color: #333;
+
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+
+    box-shadow: 0px 0px 2px gray;
+}
+
+#menu > ul{
+    list-style: none;
+
+    margin: 0px auto;
+    width: 1130px;
+}
+
+#menu > ul > li{
+    float: left;
+
+    line-height: 40px;
+    border-right: 1px solid gray;
+}
+
+#menu > ul > li > a{
+    display: block;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: all 750ms;
+}
+
+#menu > ul > li > a:first-child{
+    border-left: 1px solid gray;
+}
+
+#menu > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 5px green inset;
+    cursor: pointer;
+}
+
+#menu > ul > li > a:hover{
+    text-shadow: 0px 0px 7px black;
+}
+
+/* DROOPDOWN MENU */
+#menu > ul > li > ul{
+    display: none;
+    position: absolute;
+    width: 160px;   
+
+    list-style: none;
+
+    box-shadow: 0px 2px 5px gray;
+
+    z-index: 1;
+}
+
+#menu > ul > li:hover > ul{
+    display: block;
+}
+
+#menu > ul > li:hover > ul > li{
+    width: 100%;
+    text-decoration: none;
+
+    color: white;
+    background-color: #F2F1F0;
+    border-bottom: 1px solid #D6D6D6;
+
+    transition: all 600ms;
+
+}
+
+#menu > ul > li:hover > ul > li > a{
+    display: block;
+    text-decoration: none;
+    padding-left: 20px;
+
+    font-size: 12px;
+
+    color: #666666;
+}
+
+#menu > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 7px #70b231 inset;
+    background-color: #dbeec9; 
+}
+
+/* ANIMATIONS */
