@@ -1,4 +1,4 @@
-
+/* NEVIS */
 @font-face{
     font-family: "Nevis";
     src: url("./fonts/nevis.eot");
@@ -6,6 +6,24 @@
         url("./fonts/nevis.woff") format("woff"),
         url("./fonts/nevis.ttf") format("truetype"),
         url("./fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+/* FJALLA */
+@font-face{
+    font-family: "Fjalla";
+    src: url("./fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* WEB SYMBOLS */
+@font-face{
+    font-family: "Symbols";
+    src: url("./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+        url("fonts/websymbols-regular-webfont.eot");
+    src: url("./fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("./fonts/websymbols-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -30,6 +48,41 @@ body{
     color:green;
 }
 
+.span-link{
+    text-decoration: none;
+    color: #333333;
+}
+
+.span-link:hover{
+    color: green;
+}
+
+.blue{
+    color: blue !important;
+}
+
+.yellow{
+    color: #D69D2A !important;
+}
+
+.brown{
+    color: brown !important;
+}
+
+.icon{
+    float: left;
+
+    margin-right: 5px;
+    margin-top: 1px;
+
+    font-family: Symbols;
+    font-size: 15px;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
 
 
 /* PAGE HEADER */
@@ -189,8 +242,8 @@ body{
 
 /* ASIDE CONTENT */
 #aside, #quote{
+    display: block;
     float: left;
-    clear: both;
 
     width: 200px;
     margin: 30px;
@@ -231,14 +284,6 @@ body{
     border-right: none;
 }
 
-#aside #virtual-login1 h3{
-    color: blue;
-}
-
-#aside #virtual-login2 h3{
-    color: brown;
-}
-
 #aside li{
     margin-top: 8px;
     margin-bottom: 5px;
@@ -249,16 +294,88 @@ body{
 
 /* MAIN CONTENT OF THE PAGE */
 #content{
-    float: none;
+    float: right;
+    
+    width: 75%;
+    margin-right: 20px;
 
-    width: auto;
-    height: 700px;
+    font-family: sans-serif;
+}
 
-    border: 1px solid black;
+#content section{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    background-color: white;
+}
+
+#content section .title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: #333333;
+    font-size: 24px;
+    font-family: Fjalla;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+#content section .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#content section .article .date{
+    font-size: 14px;
+    color: gray;
+}
+
+#content .stickers .sticker-left,
+#content .stickers .sticker-rigth{
+    position: absolute;
+
+    margin-top: -20px;
+
+    z-index: 0;
+}
+
+#content .stickers .sticker-rigth{
+    margin-left: 850px;
+}
+
+#content .historic{
+    float: right;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
 }
 
 /* quote of the day */
 #quote{
+    float: left;
     box-sizing: border-box;
     padding: 10px;
 
